@@ -1,0 +1,108 @@
+commit 94dcc57182f13c7dca9e8021196477f572ec8bcf
+Author: Tuukka Tamminen <tuukka.tamminen@helsinki.fi>
+Date:   Fri Mar 17 14:52:48 2023 +0200
+
+    muutokset
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 8314667af5d051afd125c31d6246d2508771949b
+Author: Tuukka Tamminen <tuukka.tamminen@helsinki.fi>
+Date:   Fri Mar 17 14:45:28 2023 +0200
+
+    uudet filut
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 82bb8369b8d8cef5454195a5073096aab5d366d8
+Author: Tuukka Tamminen <tuukka.tamminen@helsinki.fi>
+Date:   Fri Mar 17 14:37:05 2023 +0200
+
+    muutoksia2
+
+ eka.txt    | 5 ++---
+ kolmas.txt | 1 +
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 1fa649f693d98708604f2e2cfe7424aa1d1da586
+Author: Tuukka Tamminen <tuukka.tamminen@helsinki.fi>
+Date:   Fri Mar 17 14:32:20 2023 +0200
+
+    muutoksia
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 8331a0670f7579677e18c1882358b1405e5c0bb5
+Author: Tuukka Tamminen <tuukka.tamminen@helsinki.fi>
+Date:   Fri Mar 17 14:29:57 2023 +0200
+
+    tiedosto.txt poistettu
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit d668247d8e4d9a640f0f1ff6ce35e0734631d5c6
+Author: Tuukka Tamminen <tuukka.tamminen@helsinki.fi>
+Date:   Fri Mar 17 14:26:43 2023 +0200
+
+    tiedosto.txt tekstiä muokattu
+
+ tiedosto.txt | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 7a101484406dce38804f389fb82270035a770034
+Author: Tuukka Tamminen <tuukka.tamminen@helsinki.fi>
+Date:   Fri Mar 17 14:24:15 2023 +0200
+
+    teksti lisätty tiedosto.txt
+
+ tiedosto.txt | 64 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 64 insertions(+)
+
+commit 170547f96a3d5a9bab89fd7a3e4ba538fe323c3c
+Author: Tuukka Tamminen <tuukka.tamminen@helsinki.fi>
+Date:   Fri Mar 17 14:11:54 2023 +0200
+
+    muutokset
+
+ kolmast.txt     | 1 +
+ stuff/testi.txt | 0
+ toinen.txt      | 1 +
+ 3 files changed, 2 insertions(+)
+
+commit 1c073b3ba8993146eb9a4df240ca0da50b2f1759
+Author: Tuukka Tamminen <tuukka.tamminen@helsinki.fi>
+Date:   Fri Mar 17 14:08:27 2023 +0200
+
+    lisäys
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 5cbdd58ee1744ae90791b763d833de010267892c
+Author: Tuukka Tamminen <tuukka.tamminen@helsinki.fi>
+Date:   Fri Mar 17 14:00:48 2023 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 96b79208b17dce7a0355fdac50d146411bf7af57
+Author: Tuukka Tamminen <tuukka.tamminen@helsinki.fi>
+Date:   Fri Mar 17 13:57:40 2023 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+Tuukkas-MacBook-Pro:ot_viikko1 tuukka$ 
+
