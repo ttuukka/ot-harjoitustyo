@@ -6,3 +6,6 @@
 [komentorivi.txt](https://github.com/ttuukka/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
 ### Viikko 2
+
+palautus1
+palautus2
