@@ -1,5 +1,17 @@
 ## Viikko 3
 
--Käyttäjä näkee hyvin pelkistetyn version näppämistä, joilla valitaa 
+- Käyttäjä näkee hyvin pelkistetyn version näppämistä, joilla valitaa 
 vastaus ja poistutaan pelistä
--Lisätty Button-luokka, jolla saa luotua tarvittavat näppäimet
+
+- Lisätty Button-luokka, jolla saa luotua tarvittavat näppäimet
+
+## Viikko 4
+
+- Ulkonäköä muutettu mielyttävämmäksi
+- Peliin lisätty 3 kysymystä, joihin oikein vastaamalla saa pisteen ja seuraavan kysymyksen.
+- Kysymysten jälkeen peli näyttää lopullisen tuloksen ja lopettaa itsensä
+- Button-luokkaa jatkettu eteenpäin
+- Question-luokka luotu, jonka avulla voidaan muodostaa uusia kysymyksiä ja osoittaa oikea vastaus 
+- Button, question ja game luokille tehty alustavat testit
+
+
