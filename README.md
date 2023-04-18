@@ -5,7 +5,7 @@ Pelissä vastataan erillaisiin kysymyksiin valmiilla vastauksilla ja kerätään
 - [Vaatimuusmäärittely](https://github.com/ttuukka/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 - [Työaikakirjanpito](https://github.com/ttuukka/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 - [Changelog](https://github.com/ttuukka/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
-
+- [Arkkitehtuurikuvaus](https://github.com/ttuukka/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 ## Ohjeet
 
 ### Asennus
