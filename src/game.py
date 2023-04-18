@@ -104,7 +104,7 @@ class Game:
         self.screen.blit(game_over_text, game_over_rect)
         self.screen.blit(score_text, score_rect)
         pygame.display.flip()
-        pygame.time.wait(3000)
+        pygame.time.wait(2000)
         pygame.quit()
         sys.exit()
 

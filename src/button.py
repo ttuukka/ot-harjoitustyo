@@ -17,15 +17,26 @@ class Button:
         screen.blit(self.rendered_text, self.rendered_text.get_rect(
             center=self.rect.center))
 
+    def handle_mouse_motion(self, event):
+        self.hovered = self.rect.collidepoint(event.pos)
+
+    def handle_mouse_button_down(self, event):
+        if event.button == 1 and self.hovered:
+            self.clicked = True
+
+    def handle_mouse_button_up(self, event):
+        if event.button == 1 and self.clicked:
+            self.clicked = False
+            return True
+
     def handle_event(self, event):
         if event.type == pygame.MOUSEMOTION:
-            self.hovered = self.rect.collidepoint(event.pos)
-        elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
-            if self.hovered:
-                self.clicked = True
-                return True
-        elif event.type == pygame.MOUSEBUTTONUP and event.button == 1:
-            if self.clicked:
-                self.clicked = False
-                return True
+            self.handle_mouse_motion(event)
+        elif event.type == pygame.MOUSEBUTTONDOWN:
+            self.handle_mouse_button_down(event)
+        elif event.type == pygame.MOUSEBUTTONUP:
+            return self.handle_mouse_button_up(event)
         return False
+
+    def is_clicked(self):
+        return self.clicked
