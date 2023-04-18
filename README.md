@@ -14,7 +14,7 @@ Aluksi asenna tarvittavat riipuvuudet komennolla:
 
 ### Käynnistäminen
 Peli käynnistyy kommennolla:
-`poetry invoke start`
+`poetry run invoke start`
 
 ### Testaus
 Testit saat ajettua komennolla:
