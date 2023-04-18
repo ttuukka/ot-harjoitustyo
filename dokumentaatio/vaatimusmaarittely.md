@@ -4,7 +4,7 @@ Peli on tietovisa, jossa pelaaja valitsee mielestään oikean vaihtoehdon valmii
 ## Perusversion toiminnot
 - Peliin on luotu valmiiksi kysymyksiä, joita pelaaja saa satunnaisessa järjestyksessä
 - Pelaaja vastaa kysymyksiin numeronäppäimillä tai hiirellä
-- Pelaaja ansaitsee pisteitä oikeasta vastauksista
+- [x] Pelaaja ansaitsee pisteitä oikeasta vastauksista
 - Pelin päätyttyä pelaaja tallentaa tuloksensa nimimerkillä. Peli pitää muistissa top10 taulukkoa
 ## Jatkokehitysideoita
 - Peliä voisi pelata vaihtoehtoisella pelimuodolla:
