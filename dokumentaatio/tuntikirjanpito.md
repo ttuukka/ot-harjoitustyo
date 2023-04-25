@@ -13,6 +13,7 @@
 | 18.04 | 2   | Testien kirjoittamista
 | 20.04 | 2   | Logiikka -luokan tekeminen
 | 21.04 | 2   | Userinterface -luokan tekeminen
-| 21.04 | 2   | Aloitusruudun ominaisuuksien lisääminen
-| 23.04 | 3   | Lopetusruudun ja pelin uudelleen pelaamis ominaisuuden lisääminen
+| 21.04 | 1   | Aloitusruudun ominaisuuksien lisääminen
+| 23.04 | 2  | Lopetusruudun ja pelin uudelleenpelaamisen ominaisuus lisääminen
 | 25.03 | 2   | Testien kirjoittamista logiikka -luokalle
+| **Yht.**  | **33**  |
