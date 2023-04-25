@@ -17,5 +17,7 @@ vastaus ja poistutaan pelistä
 ## Viikko 5
 
 - Logiikka ja käyttöliittymä eritelty erikseen
+  - Logic -luokka vastaa nyt pelin logiikasta ja ui:sisälle on laitettu itse käyttöliittymään liittyvät luokat
 - Ohjelman rakenne on nyt selkeämpi ja helpoittaa jatkokehitystä
 - Peliin lisätty pelin loppu ja aloitusruudut
+- Peliin lisätty lisää kysymyksiä
