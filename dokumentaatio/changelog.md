@@ -14,4 +14,8 @@ vastaus ja poistutaan pelistä
 - Question-luokka luotu, jonka avulla voidaan muodostaa uusia kysymyksiä ja osoittaa oikea vastaus 
 - Button, question ja game luokille tehty alustavat testit
 
+## Viikko 5
 
+- Logiikka ja käyttöliittymä eritelty erikseen
+- Ohjelman rakenne on nyt selkeämpi ja helpoittaa jatkokehitystä
+- Peliin lisätty pelin loppu ja aloitusruudut
