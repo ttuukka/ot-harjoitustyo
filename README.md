@@ -6,6 +6,9 @@ Pelissä vastataan erillaisiin kysymyksiin valmiilla vastauksilla ja kerätään
 - [Työaikakirjanpito](https://github.com/ttuukka/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 - [Changelog](https://github.com/ttuukka/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
 - [Arkkitehtuurikuvaus](https://github.com/ttuukka/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+
+##Releaset
+[Viikko 5](https://github.com/ttuukka/ot-harjoitustyo/releases/tag/viikko5)
 ## Ohjeet
 
 ### Asennus
