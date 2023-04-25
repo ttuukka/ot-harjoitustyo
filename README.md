@@ -7,7 +7,7 @@ Pelissä vastataan erillaisiin kysymyksiin valmiilla vastauksilla ja kerätään
 - [Changelog](https://github.com/ttuukka/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
 - [Arkkitehtuurikuvaus](https://github.com/ttuukka/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
-##Releaset
+## Releaset
 [Viikko 5](https://github.com/ttuukka/ot-harjoitustyo/releases/tag/viikko5)
 ## Ohjeet
 
