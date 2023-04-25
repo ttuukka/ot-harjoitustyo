@@ -20,4 +20,5 @@ vastaus ja poistutaan pelistä
   - Logic -luokka vastaa nyt pelin logiikasta ja ui:sisälle on laitettu itse käyttöliittymään liittyvät luokat
 - Ohjelman rakenne on nyt selkeämpi ja helpoittaa jatkokehitystä
 - Peliin lisätty pelin loppu ja aloitusruudut
+  - Lopetusruutuu lisätty vaihtoehto aloittaa peli alusta
 - Peliin lisätty lisää kysymyksiä
