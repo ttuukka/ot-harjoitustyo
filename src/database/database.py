@@ -2,8 +2,12 @@ from database.question import Question
 
 
 class Database:
+    """Luokka joka sisältää pelin kysymykset
+    """
 
     def __init__(self):
+        """Luokkaan on tallennettu listana kaiki pelin kysymykset
+        """
         self.questions = [Question('What is the smallest planet in our solar system?',
                                    ['Mercury', 'Venus', 'Mars', 'Jupiter'],
                                    'Mercury'),

@@ -1,5 +1,0 @@
-test_player: 11
-testiukko: 4
-tulos: 3
-huipputulos: 24
-helou: 6

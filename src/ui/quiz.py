@@ -1,11 +1,12 @@
 import sys
 import pygame as pg
 from logic.logic import Logic
+from ui.ui import Userinterface
 
 
 class Quiz:
-    def __init__(self, view, questions):
-        self.view = view
+    def __init__(self, questions):
+        self.view = Userinterface()
         self.logic = Logic(questions)
         self.answer_buttons = []
         self.game_over_buttons = []

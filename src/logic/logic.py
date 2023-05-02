@@ -21,11 +21,9 @@ class Logic:
         """
         self.question_db = set(question_db)
         self.score = 0
-        # self.question_index = 0
         self.question = None
         self.asked_questions = set()
         self.game_over = False
-        # self.high_scores = None
 
     def get_correct_answer(self):
         """Palauttaa Questions-luokan kautta tämän hetkisen kysymyksen oikean vastauksen
@@ -85,9 +83,8 @@ class Logic:
         """Alustaa uuden pelin
         """
         self.score = 0
-        # self.question_index = 0
         self.question = None
-        self.asked_questions = None
+        self.asked_questions = set()
         self.game_over = False
 
     def save_high_score(self, player_name):
