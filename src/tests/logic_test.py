@@ -1,7 +1,10 @@
 import unittest
 from unittest.mock import Mock
+from unittest.mock import patch
 from database.question import Question
 from logic.logic import Logic
+from io import StringIO
+import os
 
 
 class TestQuestion(unittest.TestCase):
@@ -50,3 +53,26 @@ class TestQuestion(unittest.TestCase):
         self.assertEqual(self.logic.score, 0)
         self.assertEqual(self.logic.question_index, 0)
         self.assertFalse(self.logic.game_over)
+
+    def test_save_high_score(self):
+        file_path = "src/database/high_scores.txt"
+        if os.path.exists(file_path):
+            os.remove(file_path)
+        self.logic.score = 11
+        self.logic.save_high_score('test_player')
+        lista = self.logic.get_top10_high_score()
+        self.assertIn('test_player : 11', lista)
+
+    def test_get_top10_high_score(self):
+        file_path = "src/database/high_scores.txt"
+        if os.path.exists(file_path):
+            os.remove(file_path)
+        i = 1
+        while i < 12:
+            self.logic.score = i
+            player = f"test_player{i}"
+            self.logic.save_high_score(player)
+            i += 1
+        print(self.logic.get_top10_high_score())
+        self.assertListEqual(self.logic.get_top10_high_score(), ['test_player11 : 11', 'test_player10 : 10', 'test_player9 : 9', 'test_player8 : 8',
+                             'test_player7 : 7', 'test_player6 : 6', 'test_player5 : 5', 'test_player4 : 4', 'test_player3 : 3', 'test_player2 : 2'])

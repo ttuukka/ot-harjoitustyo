@@ -2,6 +2,7 @@ from database.question import Question
 
 
 class Database:
+
     def __init__(self):
         self.questions = [Question('What is the smallest planet in our solar system?',
                                    ['Mercury', 'Venus', 'Mars', 'Jupiter'],
