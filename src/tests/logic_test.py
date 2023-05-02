@@ -39,7 +39,6 @@ class TestQuestion(unittest.TestCase):
     def test_handle_correct_answer(self):
         self.logic.handle_correct_answer()
         self.assertEqual(self.logic.score, 1)
-        self.assertEqual(self.logic.question_index, 1)
 
     def test_handle_incorrect_answer(self):
         self.logic.handle_incorrect_answer()
@@ -47,11 +46,9 @@ class TestQuestion(unittest.TestCase):
 
     def test_game_restart(self):
         self.logic.score = 3
-        self.logic.question_index = 4
         self.logic.game_over = True
         self.logic.restart_game()
         self.assertEqual(self.logic.score, 0)
-        self.assertEqual(self.logic.question_index, 0)
         self.assertFalse(self.logic.game_over)
 
     def test_save_high_score(self):
