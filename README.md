@@ -1,5 +1,5 @@
 # Tietovisa-peli
-Pelissä vastataan erillaisiin kysymyksiin valmiilla vastauksilla ja kerätään oikeista vastauksista pisteitä.
+Pelissä valitaan oikea vastaus erillaisiin kysymyksiin ja kerätään oikeista vastauksista pisteitä.
 
 ## Dokumentaatio
 - [Käyttöohje](https://github.com/ttuukka/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
