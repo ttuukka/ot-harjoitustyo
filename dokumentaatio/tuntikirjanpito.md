@@ -15,5 +15,9 @@
 | 21.04 | 2   | Userinterface -luokan tekeminen
 | 21.04 | 1   | Aloitusruudun ominaisuuksien lisääminen
 | 23.04 | 2  | Lopetusruudun ja pelin uudelleenpelaamisen ominaisuus lisääminen
-| 25.03 | 2   | Testien kirjoittamista logiikka -luokalle
-| **Yht.**  | **33**  |
+| 25.04 | 2   | Testien kirjoittamista logiikka -luokalle
+| 26.04 | 2   | high_score.txt tiedoston luomiseen, lukemiseen ja kirjoittamiseen liittyvien toiminnaliisuuksien tekeminen
+| 27.04 | 2   | Tuloksen tallentamisen - ja top10 tulokset -näkymien lisääminen
+| 30.04 | 3   | Tuloksien tallentamisen ja 10 parhaan tuloksen hakemisen hoitavien metodien viimeistely
+| 02.05 | 3   | Uusien metodien testien tekeminen
+| **Yht.**  | **43**  |
