@@ -17,6 +17,7 @@ class Button:
         self.rect = pg.Rect(pos, size)
         self.text = text
         self.color = (100, 100, 100)
+        self.hover_color = (200, 200, 200)
         self.font = pg.font.Font(None, font_size)
         self.rendered_text = self.font.render(text, True, (0, 0, 0))
         self.clicked = False
@@ -27,7 +28,9 @@ class Button:
         Args:
             screen: Ruutu jolle painike piirretään
         """
-        pg.draw.rect(screen, self.color, self.rect)
+        color = self.hover_color if self.rect.collidepoint(
+            pg.mouse.get_pos()) else self.color
+        pg.draw.rect(screen, color, self.rect)
         screen.blit(self.rendered_text, self.rendered_text.get_rect(
             center=self.rect.center))
 

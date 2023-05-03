@@ -13,9 +13,10 @@ class Quiz:
         self.start_buttons = []
         self.high_score_screen_buttons = []
         self.scene = "game_start"
-        self.intialize_quiz()
+        self.high_score_saved = False
+        self.initialize_quiz()
 
-    def intialize_quiz(self):
+    def initialize_quiz(self):
         self.game_over_buttons = self.view.create_buttons(
             ["Restart", "Exit", "Save Score"], 200)
         self.start_buttons = self.view.create_buttons(
@@ -39,6 +40,7 @@ class Quiz:
                     self.logic.question.text,
                     self.logic.question.answers
                 )
+            pg.display.flip()
 
     def handle_events(self):
         for event in pg.event.get():
@@ -75,8 +77,9 @@ class Quiz:
             if button.handle_event(event):
                 if button.text == "Restart":
                     self.restart_game()
-                elif button.text == "Save Score":
+                elif button.text == "Save Score" and not self.high_score_saved:
                     self.handle_save_high_score()
+                    self.high_score_saved = True
                 elif button.text == "Exit":
                     pg.quit()
                     sys.exit()
@@ -90,14 +93,18 @@ class Quiz:
         def handle_keydown(event, name):
             if event.key == pg.K_RETURN:
                 return False, name
-            if event.key == pg.K_BACKSPACE:
+            elif event.key == pg.K_BACKSPACE:
                 return True, name[:-1]
-            return True, name + event.unicode
+            elif len(name) < 10 and event.unicode.isalnum():
+                return True, name + event.unicode
+            else:
+                return True, name
 
         while active:
             for event in pg.event.get():
                 if event.type == pg.KEYDOWN:
                     active, name = handle_keydown(event, name)
+
             self.view.draw_high_score_input_screen(name)
 
         self.logic.save_high_score(name)
@@ -114,6 +121,7 @@ class Quiz:
 
     def restart_game(self):
         self.scene = "question_page"
+        self.high_score_saved = False
         self.logic.restart_game()
         self.generate_question()
 

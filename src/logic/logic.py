@@ -1,5 +1,6 @@
 import random
-import os
+from pathlib import Path
+from database.high_score import HighScore
 
 
 class Logic:
@@ -95,32 +96,15 @@ class Logic:
         Args:
             player_name: pelaajan syöttämä nimi merkkijonona
         """
-
-        file_path = "src/database/high_scores.txt"
-        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+        score = HighScore(player_name, self.score)
+        file_path = Path("src/database/high_scores.txt")
+        file_path.parent.mkdir(parents=True, exist_ok=True)
         with open(file_path, "a",  encoding="utf-8") as file:
-            file.write(f"{player_name}: {self.score}\n")
+            file.write(f"{str(score)}\n")
             file.flush()
 
     def get_top10_high_score(self):
-        """Avaa tiedoston, joka sisältää tulokset.
-        Tämän jälkeen käy ne läpi ja tallentaa ne listaan, jonka jälkeen järjestää 10 parasta tulosta pisteiden mukaan.
-
-
-        Returns:
-            Lista: lista joka sisältää 10 parasta tulosta pisteiden mukaan järjestettynä
-        """
-        with open("src/database/high_scores.txt", "r",  encoding="utf-8") as file:
-            scores = file.readlines()
-        top_scores = []
-        for score in scores:
-            try:
-                score_parts = score.strip().split(":")
-                name = str(score_parts[0].strip())
-                score_value = int(score_parts[1].strip())
-                top_scores.append(f"{name} : {score_value}")
-            except (ValueError, IndexError):
-                pass
-        top_scores = sorted(top_scores, key=lambda x: int(
-            x.split(" : ")[1]), reverse=True)[:10]
-        return top_scores
+        with open("src/database/high_scores.txt", "r", encoding="utf-8") as file:
+            scores = [HighScore.from_string(score_str) for score_str in file]
+        sorted_scores = sorted(scores, key=lambda s: s.score, reverse=True)
+        return sorted_scores[:10]

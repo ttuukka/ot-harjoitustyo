@@ -21,7 +21,7 @@ class Userinterface:
 
         Args:
             texts (list): Lista teksteistä, joista halutaan luoda painikkeet
-            y_pos (str): Y-koordinaatti josta halutaan ensimmäisen painikkeen alkavan
+            y_pos (int): Y-koordinaatti josta halutaan ensimmäisen painikkeen alkavan
 
         Returns:
             Lista: palauttaa luodut  Button -painikkeet listassa 
@@ -46,7 +46,6 @@ class Userinterface:
         self.draw_text(f"Score: {score}", 10, 10)
         self.draw_text(question, 100, 100)
         self.create_buttons(answers, 200)
-        pygame.display.flip()
 
     def draw_text(self, text, i, j):
         """ Luokka joa hoitaa tekstin piirtämisen näkymään.
@@ -72,7 +71,6 @@ class Userinterface:
         self.draw_text("Game Over", 100, 100)
         self.draw_text(f"Final Score: {score}", 10, 10)
         self.create_buttons(["Restart", "Exit", "Save Score"], 200)
-        pygame.display.flip()
 
     def draw_start_screen(self):
         """Piirtää pelin aloitusnäkymän
@@ -80,7 +78,6 @@ class Userinterface:
         self.screen.fill((0, 0, 0))
         self.draw_text("Trivia", 350, 50)
         self.create_buttons(["Start", "High Scores"], 200)
-        pygame.display.flip()
 
     def draw_high_score_input_screen(self, name):
         """Piirtää näkymän tuloksen tallentamista varten. 
@@ -107,5 +104,4 @@ class Userinterface:
         for score in scores:
             self.draw_text(str(score), 200, y_pos)
             y_pos += 20
-            self.create_buttons(["Back",], 500)
-        pygame.display.flip()
+        self.create_buttons(["Back",], 500)

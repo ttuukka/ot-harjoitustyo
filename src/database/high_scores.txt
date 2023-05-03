@@ -1,1 +1,7 @@
-test_player: 11
+eka:0
+toka:0
+kolmas:0
+jee:5
+123:1
+jea:1
+jou:0
