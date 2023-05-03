@@ -9,7 +9,8 @@ Pelissä valitaan oikea vastaus erillaisiin kysymyksiin ja kerätään oikeista 
 - [Arkkitehtuurikuvaus](https://github.com/ttuukka/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
 ## Releaset
-[Viikko 6] (https://github.com/ttuukka/ot-harjoitustyo/releases/tag/viikko6)
+[Viikko 6](https://github.com/ttuukka/ot-harjoitustyo/releases/tag/viikko6)
+
 [Viikko 5](https://github.com/ttuukka/ot-harjoitustyo/releases/tag/viikko5)
 ## Ohjeet
 
