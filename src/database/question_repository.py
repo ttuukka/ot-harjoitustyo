@@ -4,14 +4,12 @@ import random
 
 
 class QuestionRepository:
-    """Luokka joka sisältää pelin kysymykset
+    """Luokka joka lukee kysymykset tiedostosta ja alustaa ne helpommin käsiteltävään muotoon
     """
 
     def __init__(self):
         """Luokkaan on tallennettu listana kaiki pelin kysymykset
 
-        Args:
-            file_path (str): polku CSV-tiedostoon, joka sisältää kysymykset
         """
         self.questions = []
         file_path = "src/database/questions_db.txt"

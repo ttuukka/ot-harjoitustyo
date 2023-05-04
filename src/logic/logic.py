@@ -1,5 +1,4 @@
 import random
-from pathlib import Path
 import time
 
 
@@ -19,6 +18,7 @@ class Logic:
             question : tämän hetkinen kysymys sisältäen itse kysymyksen, vastausvaihtoehdot, sekä oikean vastauksen
             asked_questions : pelaajalta jo kysytyt kysymykset
             game_over: Kertoo onko peli edennyt loppuun
+            game_mode: asetaan joko "normal" tai "time" riippuen kumpaa pelimuotoa pelataan
         """
         self.question_db = set(question_db)
         self.score = 0
@@ -38,6 +38,7 @@ class Logic:
     def get_next_question(self):
         """Aluksi tarkistaa onko uusia kysymyksiä jäljellä, jos ei niin kysymukset alkvat alusta.
         Tämän jälkeen otetaan satunnainen uusi kysymys, joka lisätään kysyttyihin kysymyksiin.
+        Aloittaa ajastimen kysymykselle
 
 
         Returns:
@@ -71,7 +72,7 @@ class Logic:
         return False
 
     def handle_correct_answer(self):
-        """Suorittaa oikean vastauksen jälkeiset toimenpiteet.
+        """Suorittaa oikean vastauksen jälkeiset toimenpiteet. Lopettaa kysymyksen ajastimen
         Kasvattaa pelaajan pisteitä
         """
         self.end_time = self.get_time()
@@ -98,10 +99,19 @@ class Logic:
         self.game_over = False
 
     def get_time(self):
+        """metodi vastausajan mittausta varten
+
+        Returns:
+            time (float): palauttaa ajan sekunneissa
+        """
         return time.time()
 
     def set_time_game_mode(self):
+        """Asettaa pelimuodoksi "time"
+        """
         self.game_mode = "time"
 
     def set_normal_game_mode(self):
+        """Asettaa pelimuodoksi "normal"
+        """
         self.game_mode = "normal"

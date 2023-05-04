@@ -3,11 +3,20 @@ from pathlib import Path
 
 
 class ScoreRepository:
+    """Luokka joka hoitaa tuloksien tallentamisen ja 10 parhaan tuloksen rajaamisen ja järjestelyn
+    """
 
     def __init__(self):
+        """Alustetaan polku, jossa tiedosto sijaitsee
+        """
         self.file_path = Path("src/database/high_scores.txt")
 
     def get_top10_scores(self):
+        """Lukee tiedostosta tallennetetut tulokset ja jakaa ne pelimuodon mukaan
+
+        Returns:
+            Lista: Palauttaa kaksi listaa, joissa on molempien pelimuotojen 10 parasta tulosta ja nimierkit
+        """
         normal_scores = []
         time_scores = []
         with open(self.file_path, "r") as csvfile:
@@ -29,6 +38,13 @@ class ScoreRepository:
         return normal_scores, time_scores
 
     def save_score(self, name, score, mode):
+        """Tallentaa valmiiseen tiedostoon pelaajan tuloksen
+
+        Args:
+            name (str): pelaajan antama nimi
+            score (float): pelaajan keräämät pisteet
+            mode (str): pelimuoto, jolla peli pelattiin
+        """
         with open(self.file_path, "a", newline='') as csvfile:
             csvfile.seek(0)
             writer = csv.writer(csvfile)

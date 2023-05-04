@@ -17,14 +17,17 @@ class Views:
         pygame.time.Clock().tick(30)
 
     def create_buttons(self, texts, y_pos, x_pos=100, b_width=400, b_heigth=40):
-        """Luo painikkeita halutuilla teksteillä ja sijainilla. 
+        """Luo uusia painikkeita ja piirtää ne
 
         Args:
             texts (list): Lista teksteistä, joista halutaan luoda painikkeet
             y_pos (int): Y-koordinaatti josta halutaan ensimmäisen painikkeen alkavan
+            x_pos (int): X-koodinaatti painikkeille
+            b_width (int): painikkeiden leveys
+            b_height (int): painikkeiden korkeus
 
         Returns:
-            Lista: palauttaa luodut  Button -painikkeet listassa 
+            Lista: palauttaa luodut  painikkeet listana 
         """
         buttons = []
         for i, text in enumerate(texts):
@@ -49,12 +52,13 @@ class Views:
         self.create_buttons(answers, 200)
 
     def draw_text(self, text, i, j, size=30):
-        """ Luokka joa hoitaa tekstin piirtämisen näkymään.
+        """ Luokka joka hoitaa tekstin piirtämisen näkymään.
 
         Args:
             text (str): teksti joka halutaan pirtää
             i (int): x-koordinaatti tekstille
             j (int): y-koordinaatti tekstille
+            size (int): teksti koko
         """
         self.font = pygame.font.Font(None, size)
         text_surface = self.font.render(text, True, (255, 20, 147))
@@ -99,7 +103,8 @@ class Views:
         """Piirtää näkymän, jossa on 10 parasta tulosta järjestyksessä
 
         Args:
-            scores (list): lista joka sisältää 10 parasta tulosta
+            normal_scores (list): lista joka sisältää normaalin pelimuodon 10 parasta tulosta
+            time_scores (list): lista joka sisältää aika pelimuodon 10 parasta tulosta
         """
         self.screen.fill((0, 0, 0))
         self.draw_text("Nomal Top 10", 100, 10)

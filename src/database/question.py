@@ -10,7 +10,7 @@ class Question:
 
         Args:
             text (str): Itse kysymys, johon haetaan vastausta
-            answers (list): lista, joka sisältää 4 eri vastaus vaihtoehto
+            answers (list): lista, joka sisältää 4 eri vastausvaihtoehto
             correct_answer (str): oikea vastaus, joka on yksi vastaus vaihtoehdoista
         """
         self.text = text
