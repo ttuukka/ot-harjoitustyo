@@ -1,15 +1,11 @@
 import sys
 import pygame
-from ui.quiz import Quiz
-from database.database import Database
-
-pygame.init()
+from ui.ui import UserInterface
 
 
 def main():
 
-    database = Database()
-    game = Quiz(database.questions)
+    game = UserInterface()
     game.run()
     pygame.quit()
     sys.exit()

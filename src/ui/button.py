@@ -18,7 +18,7 @@ class Button:
         self.text = text
         self.color = (100, 100, 100)
         self.hover_color = (200, 200, 200)
-        self.font = pg.font.Font(None, font_size)
+        self.font = pg.font.SysFont("monospace", font_size)
         self.rendered_text = self.font.render(text, True, (0, 0, 0))
         self.clicked = False
 

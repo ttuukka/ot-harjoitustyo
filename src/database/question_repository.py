@@ -3,7 +3,7 @@ from database.question import Question
 import random
 
 
-class Database:
+class QuestionRepository:
     """Luokka joka sisältää pelin kysymykset
     """
 
@@ -14,13 +14,14 @@ class Database:
             file_path (str): polku CSV-tiedostoon, joka sisältää kysymykset
         """
         self.questions = []
-        file_path = "src/database/questionsdb.csv"
+        file_path = "src/database/questions_db.txt"
         with open(file_path, newline='', encoding='utf-8') as csvfile:
-            reader = csv.reader(csvfile)
+            reader = csv.DictReader(csvfile)
             for row in reader:
-                text = row[0]
-                answers = row[1:5]
+                text = row["text"]
+                answers = [row["answer1"], row["answer2"],
+                           row["answer3"], row["answer4"]]
                 random.shuffle(answers)
-                correct_answer = row[5]
+                correct_answer = row["correct_answer"]
                 question = Question(text, answers, correct_answer)
                 self.questions.append(question)

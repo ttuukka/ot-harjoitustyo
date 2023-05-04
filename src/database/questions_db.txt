@@ -30,3 +30,21 @@ What is the currency of China?,Yuan,Euro,Dollar,Pound,Yuan
 What is the capital of Canada?,Ottawa,Toronto,Montreal,Vancouver,Ottawa
 What is the largest country in Africa by land area?,Algeria,Democratic Republic of the Congo,Sudan,Libya,Algeria
 What is the longest river in Europe?,Volga,Don,Danube,Ural,Volga
+What is the largest country in the world by population?,China,India,United States,Brazil,China
+What is the capital of South Korea?,Seoul,Busan,Incheon,Daegu,Seoul
+What is the currency of Australia?,Australian Dollar,US Dollar,Euro,Japanese Yen,Australian Dollar
+What is the name of the currency used in Switzerland?,Swiss Franc,Euro,British Pound,US Dollar,Swiss Franc
+What is the highest mountain in Asia?,Mount Everest,K2,Kangchenjunga,Lhotse,Mount Everest
+What is the capital of Egypt?,Cairo,Alexandria,Luxor,Aswan,Cairo
+What is the currency of South Korea?,South Korean won,US Dollar,Euro,Japanese Yen,South Korean won
+What is the name of the longest river in South America?,Amazon River,Parana River,Ucayali River,Sao Francisco River,Amazon River
+What is the capital of Thailand?,Bangkok,Chiang Mai,Phuket,Pattaya,Bangkok
+What is the name of the currency used in Brazil?,Brazilian Real,US Dollar,Euro,British Pound,Brazilian Real
+What is the smallest continent in the world?,Australia,Europe,Antarctica,South America,Antarctica
+What is the capital of Mexico?,Mexico City,Guadalajara,Monterrey,Tijuana,Mexico City
+What is the highest mountain in Australia?,Mount Kosciuszko,Mt. Wilhelm,Mount Giluwe,Puncak Jaya,Mount Kosciuszko
+What is the name of the currency used in Indonesia?,Indonesian Rupiah,US Dollar,Euro,British Pound,Indonesian Rupiah
+What is the highest waterfall in the United States?,Yosemite Falls,Ribbon Falls,Upper Falls of the Yellowstone River,Vernal Fall,Yosemite Falls
+What is the capital of Saudi Arabia?,Riyadh,Jeddah,Mecca,Dammam,Riyadh
+What is the currency of Canada?,Canadian Dollar,US Dollar,Euro,Japanese Yen,Canadian Dollar
+What is the name of the currency used in the United Arab Emirates?,UAE Dirham,US Dollar,Euro,British Pound,UAE Dirham

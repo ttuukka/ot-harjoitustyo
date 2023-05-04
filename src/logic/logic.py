@@ -1,6 +1,6 @@
 import random
 from pathlib import Path
-from database.high_score import HighScore
+import time
 
 
 class Logic:
@@ -25,6 +25,7 @@ class Logic:
         self.question = None
         self.asked_questions = set()
         self.game_over = False
+        self.game_mode = ""
 
     def get_correct_answer(self):
         """Palauttaa Questions-luokan kautta tämän hetkisen kysymyksen oikean vastauksen
@@ -47,6 +48,7 @@ class Logic:
             remaining_questions = set(self.question_db)
         self.question = random.choice(list(remaining_questions))
         self.asked_questions.add(self.question)
+        self.start_time = self.get_time()
         return self.question
 
     def check_answer(self, button):
@@ -72,7 +74,13 @@ class Logic:
         """Suorittaa oikean vastauksen jälkeiset toimenpiteet.
         Kasvattaa pelaajan pisteitä
         """
-        self.score += 1
+        self.end_time = self.get_time()
+        if self.game_mode == "normal":
+            self.score += 1
+        else:
+            temp_score = round(10 - (self.end_time - self.start_time), 2)
+            if temp_score > 0:
+                self.score += temp_score
 
     def handle_incorrect_answer(self):
         """Suorittaa väärän vastauksen jälkeiset toimenpiteet.
@@ -83,28 +91,17 @@ class Logic:
     def restart_game(self):
         """Alustaa uuden pelin
         """
+        self.game_mode = ""
         self.score = 0
         self.question = None
         self.asked_questions = set()
         self.game_over = False
 
-    def save_high_score(self, player_name):
-        """Tallentaa pelaajan tuloksen tiedostoon.
-        Aluksi tarkistaa onko tiedosto valmiiksi luotu.
-        Tämän jälkeen tallentaa sinne nimen, sekä tuloksen
+    def get_time(self):
+        return time.time()
 
-        Args:
-            player_name: pelaajan syöttämä nimi merkkijonona
-        """
-        score = HighScore(player_name, self.score)
-        file_path = Path("src/database/high_scores.txt")
-        file_path.parent.mkdir(parents=True, exist_ok=True)
-        with open(file_path, "a",  encoding="utf-8") as file:
-            file.write(f"{str(score)}\n")
-            file.flush()
+    def set_time_game_mode(self):
+        self.game_mode = "time"
 
-    def get_top10_high_score(self):
-        with open("src/database/high_scores.txt", "r", encoding="utf-8") as file:
-            scores = [HighScore.from_string(score_str) for score_str in file]
-        sorted_scores = sorted(scores, key=lambda s: s.score, reverse=True)
-        return sorted_scores[:10]
+    def set_normal_game_mode(self):
+        self.game_mode = "normal"
