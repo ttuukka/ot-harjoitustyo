@@ -20,4 +20,8 @@
 | 27.04 | 2   | Tuloksen tallentamisen - ja top10 tulokset -näkymien lisääminen
 | 30.04 | 3   | Tuloksien tallentamisen ja 10 parhaan tuloksen hakemisen hoitavien metodien viimeistely
 | 02.05 | 3   | Uusien metodien testien tekeminen
-| **Yht.**  | **43**  |
+| 03.05 | 2   | Aika-pelimuodon lisääminen logiikkaan ja näkymään
+| 04.05 | 2  | Tulosten käsittely siiretty omaan luokkaansa
+| 05.05 | 2  | aika-pisteiden bugin korjauksen korjaamista
+| 05.05 | 3  | Docstringien lisäämistä ja testien tekemistä
+| **Yht.**  | **52**  |
