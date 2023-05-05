@@ -158,7 +158,8 @@ class UserInterface:
             Muuten palauttaa True ja nimen
         """
         if event.key == pg.K_RETURN:
-            return False, name
+            if name != "":
+                return False, name
         if event.key == pg.K_BACKSPACE:
             return True, name[:-1]
         if len(name) < 11 and event.unicode.isalnum():
