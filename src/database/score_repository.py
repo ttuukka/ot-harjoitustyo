@@ -7,9 +7,14 @@ class ScoreRepository:
     """
 
     def __init__(self):
-        """Alustetaan polku, jossa tiedosto sijaitsee
+        """Alustetaan tiedosto, johon tulokset tallennetaan
         """
         self.file_path = Path("src/database/high_scores.txt")
+        header = ["name", "score", "mode"]
+        if not self.file_path.exists():
+            with open(self.file_path, "w", newline='') as csvfile:
+                writer = csv.writer(csvfile)
+                writer.writerow(header)
 
     def get_top10_scores(self):
         """Lukee tiedostosta tallennetetut tulokset ja jakaa ne pelimuodon mukaan
@@ -46,6 +51,5 @@ class ScoreRepository:
             mode (str): pelimuoto, jolla peli pelattiin
         """
         with open(self.file_path, "a", newline='') as csvfile:
-            csvfile.seek(0)
             writer = csv.writer(csvfile)
             writer.writerow([name, score, mode])

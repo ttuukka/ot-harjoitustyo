@@ -79,9 +79,11 @@ class Logic:
         if self.game_mode == "normal":
             self.score += 1
         else:
-            temp_score = round(10 - (self.end_time - self.start_time), 2)
-            if temp_score > 0:
-                self.score += temp_score
+            time = 10 - (self.end_time - self.start_time)
+            if time > 0:
+                time = round(time, 2)
+                self.score += time
+                self.score = round(self.score, 2)
 
     def handle_incorrect_answer(self):
         """Suorittaa väärän vastauksen jälkeiset toimenpiteet.
