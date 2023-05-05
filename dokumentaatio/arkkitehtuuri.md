@@ -2,31 +2,48 @@
 
 ## Rakenne
 
-Pelin rakenne koostuu kolmesta osasta. Ui sisältää pelin käyttöliittymän, Logic logiikan ja Database pelin kysymykset ja tallennetetut tulokset.
+Pelin pakkaurakenne:
 
-![IMG_3496 Large](https://user-images.githubusercontent.com/128143830/232796760-04dce821-fc62-47cc-98e4-b3b48725550b.jpeg)
+![IMG_3538 Small](https://user-images.githubusercontent.com/128143830/236457932-f6ff7f80-af64-4156-8a2e-45d8d6d1236f.png)
+
+Rakenne koostuu kolmesta osasta. Ui sisältää pelin käyttöliittymän, Logic logiikan ja Database pelin kysymykset ja tallennetetut tulokset.
+
 
 ### Käyttöliittymä
 
-Käyttöliittymä koostuu kolmesta luokasta Button, Ui ja Quiz.
+Käyttöliittymällä on on viisi erillaista näkymää:
 
-Button luokan avulla voidaan luoda uusia painikkeita, joille voidaan määrätä sijainti,teksti ja koko.
+-Aloitusnäkymä
+-Kysymys-näkymä
+-Pelin loppu-näkymä
+-Pisteiden talletus-näkymä
+-Tulostaulu -näkymä
 
-Ui luokka sisältää pelin kaikki eri näkymät, joita tällä hetkellä on aloitus, kysymys, pisteiden tallentaminen, top10 parhaat pisteet ja pelin lopetus. Tämän lisäsi luokassa on sisällä kaksi metodia, jotka vastaavat tekstin piirtämisestä ja uusien painikkeiden luomisesta
-
-Quiz luokka ottaa vastaan ja käsittelee käyttäjän syötteen ja vaihtaa näkymää tarvittaessa.
+Kaikki näkymät löytyvät [Views](https://github.com/ttuukka/ot-harjoitustyo/blob/master/src/ui/views.py)-luokasta. [Userinterface](https://github.com/ttuukka/ot-harjoitustyo/blob/master/src/ui/ui.py)-luokka vastaanottaa pelaajan syötteen, sekä yhdistää pelin logiikan ja näkymät.
+[Button](https://github.com/ttuukka/ot-harjoitustyo/blob/master/src/ui/button.py)-luokka vastaa painikkeista.
 
 ### Sovelluslogiikka
 
-Pelin Logiikasta vastaa luokka Logic. Luokka kuvaa pelin sen hetkistä tilannetta. Tämä sisältää pisteet, kysymyksen (joka sisältää myös vastausvaihtoehdot, sekä oikeain vastauksen), kysytyt kysymykset, sekä tiedon onko peli päättynyt.
+Pelin Logiikasta vastaa [Logic](https://github.com/ttuukka/ot-harjoitustyo/blob/master/src/logic/logic.py)-luokka. Luokka kuvaa pelin sen hetkistä tilannetta. Tämä sisältää:
+- Pisteet
+- Vastausajan
+- Kysymyksen (joka sisältää myös vastausvaihtoehdot, sekä oikean vastauksen), kysytyt kysymykset
+- Tiedon onko peli päättynyt
+- Tiedon pelimuodosta 
 
 Luokka sisältää kaikki toiminnallisuudet pelin toimimiseen mm. uusien kysymyksien hakeminen, vastauksen tarkistus ja pelin uudelleenkäynnistys
 
 ### Database
 
-Rakenne sisältää luokan Database, jossa on listassa kaikki pelin kysymykset(lista vaihtuu .csv tiedostoksi)
+Rakenne Database sisältää pelin kysymykset [questions_db.txt](https://github.com/ttuukka/ot-harjoitustyo/blob/master/src/database/questions_db.txt) ja  tulokset high_scores.txt. Kysymykset ja tulokset ovat csv-muodossa.
 
-Tämän lisäksi rakenteeseen tallennetaan high_scores.txt tiedosto, kun pelaaja ensimmäisen kerran tallentaa tuloksensa. Ensimmäisen tallennuksen jälkeen tulokset tallennetaan olemassa olevaan tiedostoon.
+Kysymysten rakenne on ```text,answer1,answer2,answer3,answer4,correct_answer```
+
+Tulosten rakenne on ```name,score,mode```
+
+Rakenne sisältää myös näiden tiedostojen lukemiseen ja kirjoittamiseen tehdyt luokat [question_repository.py](https://github.com/ttuukka/ot-harjoitustyo/blob/master/src/database/question_repository.py) ja [score_repository.py](https://github.com/ttuukka/ot-harjoitustyo/blob/master/src/database/score_repository.py).
+
+Näiden lisäksi rakenteesta löytyy [Question](https://github.com/ttuukka/ot-harjoitustyo/blob/master/src/database/question.py)-luokka, jonka avulla käsitellään kysymysten rakennetta pelissä.
 
 ## Sekvenssikaavio
 Kaavio kuvaa kun käyttäjä aloittaa pelin ja vastaa kysymykseen oikein
