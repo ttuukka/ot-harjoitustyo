@@ -41,7 +41,8 @@ class Button:
             event: Tapahtuman tiedot
 
         Returns:
-            True, jos hiiri on painettu alas, sekä hiiri on painikkeen päällä ja False kun hiire päästetään ylös sekä hiiri on painikkeen päällä 
+            True, jos hiiri on painettu alas, sekä hiiri on painikkeen päällä ja False,
+            kun hiire päästetään ylös sekä hiiri on painikkeen päällä 
         """
         if event.type == pg.MOUSEBUTTONDOWN and self.rect.collidepoint(event.pos):
             self.clicked = True

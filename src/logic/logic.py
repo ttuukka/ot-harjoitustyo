@@ -15,7 +15,8 @@ class Logic:
         Args:
             question_db : Pelin kysymykset
             score : pelaajan tämän hetkiset pisteet
-            question : tämän hetkinen kysymys sisältäen itse kysymyksen, vastausvaihtoehdot, sekä oikean vastauksen
+            question : tämän hetkinen kysymys sisältäen
+            itse kysymyksen, vastausvaihtoehdot, sekä oikean vastauksen
             asked_questions : pelaajalta jo kysytyt kysymykset
             game_over: Kertoo onko peli edennyt loppuun
             game_mode: asetaan joko "normal" tai "time" riippuen kumpaa pelimuotoa pelataan
@@ -26,6 +27,8 @@ class Logic:
         self.asked_questions = set()
         self.game_over = False
         self.game_mode = ""
+        self.start_time = None
+        self.end_time = None
 
     def get_correct_answer(self):
         """Palauttaa Questions-luokan kautta tämän hetkisen kysymyksen oikean vastauksen
@@ -54,8 +57,10 @@ class Logic:
 
     def check_answer(self, button):
         """Tarkistaa vatauksen. 
-        Tarkistus tapahtuu vertailemalla klikatun vastauspainikkeen tekstiä oikeaan vastaukseen.
-        Jos vastaus on oikein, suoritetaan oikean vastauksen käsittely, muuten suoritetaan väärän vastauksen käsittely.
+        Tarkistus tapahtuu vertailemalla
+        klikatun vastauspainikkeen tekstiä oikeaan vastaukseen.
+        Jos vastaus on oikein, suoritetaan oikean vastauksen käsittely,
+        muuten suoritetaan väärän vastauksen käsittely.
 
 
         Args:
@@ -79,10 +84,10 @@ class Logic:
         if self.game_mode == "normal":
             self.score += 1
         else:
-            time = 10 - (self.end_time - self.start_time)
-            if time > 0:
-                time = round(time, 2)
-                self.score += time
+            time_score = 10 - (self.end_time - self.start_time)
+            if time_score > 0:
+                time_score = round(time_score, 2)
+                self.score += time_score
                 self.score = round(self.score, 2)
 
     def handle_incorrect_answer(self):

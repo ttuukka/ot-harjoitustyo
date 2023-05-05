@@ -151,18 +151,19 @@ class UserInterface:
 
         Returns:
             Jos pelaaja painaa enteriä metodi palauttaa False ja kirjoitetutun nimen
-            Jos pelaaja painaa backspacea metodi paluttaa Truen ja poistaa kirjoitetusta nimestä yhden merkin
-            Jos nimen pituus on < 11 merkkiä ja syötetty merkkiä on sallittu, palauttaa True ja nimen + syötetyn merkin
+            Jos pelaaja painaa backspacea metodi paluttaa Truen ja poistaa
+            kirjoitetusta nimestä yhden merkin
+            Jos nimen pituus on < 11 merkkiä ja syötetty merkkiä on sallittu,
+            palauttaa True ja nimen + syötetyn merkin
             Muuten palauttaa True ja nimen
         """
         if event.key == pg.K_RETURN:
             return False, name
-        elif event.key == pg.K_BACKSPACE:
+        if event.key == pg.K_BACKSPACE:
             return True, name[:-1]
-        elif len(name) < 11 and event.unicode.isalnum():
+        if len(name) < 11 and event.unicode.isalnum():
             return True, name + event.unicode
-        else:
-            return True, name
+        return True, name
 
     def handle_high_score_screen_events(self, event):
         """Käsittelee tulostaulukko -näkymän tapahtumat
@@ -179,7 +180,7 @@ class UserInterface:
         """Hakee pelin seuraavaa kysymystä varten näkymän ja kysymyksen
         """
         self.answer_buttons = self.views.create_buttons(
-            self.logic.get_next_question().answers, 200)
+            self.logic.get_next_question().answers, 200, 100, 500)
 
     def restart_game(self):
         """Asettaa pelin arvoja pelin uudelleen pelaamista varten

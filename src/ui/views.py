@@ -49,7 +49,7 @@ class Views:
         self.screen.fill((0, 0, 0))
         self.draw_text(f"Score: {score}", 10, 10)
         self.draw_text(question, 100, 100)
-        self.create_buttons(answers, 200)
+        self.create_buttons(answers, 200, 100, 500)
 
     def draw_text(self, text, i, j, size=30):
         """ Luokka joka hoitaa tekstin piirtämisen näkymään.
@@ -60,8 +60,8 @@ class Views:
             j (int): y-koordinaatti tekstille
             size (int): teksti koko
         """
-        self.font = pygame.font.Font(None, size)
-        text_surface = self.font.render(text, True, (255, 20, 147))
+        font = pygame.font.Font(None, size)
+        text_surface = font.render(text, True, (255, 20, 147))
         rect = text_surface.get_rect()
         rect.x = i
         rect.y = j

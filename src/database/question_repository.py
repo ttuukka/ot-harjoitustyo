@@ -1,6 +1,6 @@
 import csv
-from database.question import Question
 import random
+from database.question import Question
 
 
 class QuestionRepository:

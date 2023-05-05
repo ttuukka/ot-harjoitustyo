@@ -12,7 +12,7 @@ class ScoreRepository:
         self.file_path = Path("src/database/high_scores.txt")
         header = ["name", "score", "mode"]
         if not self.file_path.exists():
-            with open(self.file_path, "w", newline='') as csvfile:
+            with open(self.file_path, "w", newline='', encoding='utf-8') as csvfile:
                 writer = csv.writer(csvfile)
                 writer.writerow(header)
 
@@ -20,11 +20,12 @@ class ScoreRepository:
         """Lukee tiedostosta tallennetetut tulokset ja jakaa ne pelimuodon mukaan
 
         Returns:
-            Lista: Palauttaa kaksi listaa, joissa on molempien pelimuotojen 10 parasta tulosta ja nimierkit
+            Lista: Palauttaa kaksi listaa,
+            joissa on molempien pelimuotojen 10 parasta tulosta ja nimierkit
         """
         normal_scores = []
         time_scores = []
-        with open(self.file_path, "r") as csvfile:
+        with open(self.file_path, "r", encoding='utf-8') as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
                 name = row["name"]
@@ -50,6 +51,6 @@ class ScoreRepository:
             score (float): pelaajan keräämät pisteet
             mode (str): pelimuoto, jolla peli pelattiin
         """
-        with open(self.file_path, "a", newline='') as csvfile:
+        with open(self.file_path, "a", newline='', encoding='utf-8') as csvfile:
             writer = csv.writer(csvfile)
             writer.writerow([name, score, mode])
