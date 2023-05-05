@@ -34,8 +34,22 @@ Pelaaja valitsee vastausvaihtoehdoista mielestään oikean. Oikean vastauksen j�
 Pelin loppunäkymä:
 <img width="800" alt="Screenshot 2023-05-05 at 14 47 43" src="https://user-images.githubusercontent.com/128143830/236449848-2edefd53-0c56-40d1-83d8-938ebae4c701.png">
 
-Pelin loputtua pelaaja pystyy tallentaamaan pisteensä valitsemalla "Save Score"
+Pelin loputtua pelaaja pystyy tallentaamaan pisteensä valitsemalla "Save Score". Tämän jälkeen pelaaja kirjoittaa nimimerkkinsä ja tallettaa sen painamalla ENTER-näppäintä.
 
 Pisteiden talletusnäkymä:
+<img width="794" alt="Screenshot 2023-05-05 at 14 55 38" src="https://user-images.githubusercontent.com/128143830/236451865-24e85be9-0bf8-4d86-9ff5-e922921634fa.png">
+
+Pelaaja voi myös katsoa kymmenen parhaan tuloksen taulukkoa, jossa pisteet on eritelty pelimuodon mukaan painamalla "High Scores".
+
+Taulukkonäkymä:
+<img width="794" alt="Screenshot 2023-05-05 at 14 55 38" src="https://user-images.githubusercontent.com/128143830/236452336-49319ee3-797d-4b67-a1d8-3d9bfa91dcab.png">
+
+Valitsemalla "Restart" pelaaja voi valita uudesta pelimuodon ja käynnistää uuden pelin.
+
+Valitsemalla "Exit" peli sulkeutuu. Pelaaja voi myös lopettaa pelin koska tahansa painamalla ESC-näppäintä.
+
+
+
+
 
 
