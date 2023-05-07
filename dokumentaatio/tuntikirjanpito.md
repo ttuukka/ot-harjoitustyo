@@ -24,6 +24,7 @@
 | 04.05 | 2  | Tulosten käsittely siiretty omaan luokkaansa
 | 05.05 | 2  | aika-pisteiden bugin korjauksen korjaamista
 | 05.05 | 3  | Docstringien lisäämistä ja testien tekemistä
-| 07.05 | 3  | repo-luokkien parantelua
-| 07.05 | 3  | bugien korjaamista
+| 07.05 | 2  | repo-luokkien parantelua
+| 07.05 | 2 | bugien korjaamista
+| 07.05 | 2  | dokumenttien päivittämistä
 | **Yht.**  | **58**  |
