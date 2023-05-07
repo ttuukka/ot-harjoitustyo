@@ -2,7 +2,6 @@
 
 - Käyttäjä näkee hyvin pelkistetyn version näppämistä, joilla valitaa 
 vastaus ja poistutaan pelistä
-
 - Lisätty Button-luokka, jolla saa luotua tarvittavat näppäimet
 
 ## Viikko 4
@@ -27,4 +26,11 @@ vastaus ja poistutaan pelistä
 
 - Peliin lisätty toiminto tuloksen tallentamiseen nimimerkillä 
 - Pelaaja pystyy aloitusvalikosta katsomaan top 10 -parhaan tuloksen näkymää
+
+## Viikko 7
+
+- Peliin lisätty toinenpelimuoto
+- Tuloksien katominen siirretty alkuvalikosta loppuvalikkoon
+- Tulostaulukko näyttää nyt molempien pelimuotojen parhaat tulokset
+- Korjattu bugi, jossa vanhoja kysymyksiä kierrätettiin
 
