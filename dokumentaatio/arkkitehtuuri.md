@@ -45,6 +45,11 @@ Rakenne sisältää myös näiden tiedostojen lukemiseen ja kirjoittamiseen tehd
 
 Näiden lisäksi rakenteesta löytyy [Question](https://github.com/ttuukka/ot-harjoitustyo/blob/master/src/database/question.py)-luokka, jonka avulla käsitellään kysymysten rakennetta pelissä.
 
+## Pakkauskaavio
+
+![pakkausrakenne](https://user-images.githubusercontent.com/128143830/236687309-c182ff00-4737-428d-a796-20227b1b24f1.png)
+
+
 ## Sekvenssikaavio
 Kaavio kuvaa kun käyttäjä aloittaa pelin ja vastaa kysymykseen oikein
 
