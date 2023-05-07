@@ -6,14 +6,22 @@ class ScoreRepository:
     """Luokka joka hoitaa tuloksien tallentamisen ja 10 parhaan tuloksen rajaamisen ja järjestelyn
     """
 
-    def __init__(self):
-        """Alustetaan tiedosto, johon tulokset tallennetaan
+    def __init__(self, file_path):
+        """ Luokan konstruktori
+
+        Args:
+            file_path (str): polku jonne tulokset tallennetaan
         """
-        self.file_path = Path("src/database/high_scores.txt")
-        header = ["name", "score", "mode"]
+        self.file_path = Path(file_path)
+        self.check_file()
+
+    def check_file(self):
+        """Tarkistaa onko tiedosto jo olemassa, jos ei niin luo uuden tiedoston
+        """
         if not self.file_path.exists():
             with open(self.file_path, "w", newline='', encoding='utf-8') as csvfile:
                 writer = csv.writer(csvfile)
+                header = ["name", "score", "mode"]
                 writer.writerow(header)
 
     def get_top10_scores(self):

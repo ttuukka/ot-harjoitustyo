@@ -1,0 +1,4 @@
+text,answer1,answer2,answer3,answer4,correct_answer
+What is the smallest planet in our solar system?,Mercury,Venus,Mars,Jupiter,Mercury
+What is the largest mammal on Earth?,Blue Whale,Elephant,Giraffe,Hippopotamus,Blue Whale
+What is the currency of India?,Rupee,Dollar,Euro,Pound,Rupee

@@ -20,6 +20,9 @@ class Logic:
             asked_questions : pelaajalta jo kysytyt kysymykset
             game_over: Kertoo onko peli edennyt loppuun
             game_mode: asetaan joko "normal" tai "time" riippuen kumpaa pelimuotoa pelataan
+            start_time: aikapisteiden aloitusaika
+            end_time: aikapisteiden lopetusaika
+
         """
         self.question_db = set(question_db)
         self.score = 0
@@ -41,15 +44,16 @@ class Logic:
     def get_next_question(self):
         """Aluksi tarkistaa onko uusia kysymyksiä jäljellä, jos ei niin kysymukset alkvat alusta.
         Tämän jälkeen otetaan satunnainen uusi kysymys, joka lisätään kysyttyihin kysymyksiin.
-        Aloittaa ajastimen kysymykselle
+        Aloittaa ajastimen kysymykselle.
 
 
         Returns:
             Question: tämän hetken aktiivisen kysymyksen
         """
         remaining_questions = self.question_db - self.asked_questions
-        if not remaining_questions:
-            remaining_questions = set(self.question_db)
+        if len(remaining_questions) == 0:
+            remaining_questions = self.question_db
+            self.asked_questions = set()
         self.question = random.choice(list(remaining_questions))
         self.asked_questions.add(self.question)
         self.start_time = self.get_time()
@@ -77,7 +81,7 @@ class Logic:
         return False
 
     def handle_correct_answer(self):
-        """Suorittaa oikean vastauksen jälkeiset toimenpiteet. Lopettaa kysymyksen ajastimen
+        """Suorittaa oikean vastauksen jälkeiset toimenpiteet. Lopettaa kysymyksen ajastimen.
         Kasvattaa pelaajan pisteitä
         """
         self.end_time = self.get_time()

@@ -16,3 +16,6 @@ class Question:
         self.text = text
         self.answers = answers
         self.correct_answer = correct_answer
+
+    def __str__(self):
+        return self.text

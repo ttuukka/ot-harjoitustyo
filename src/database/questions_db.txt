@@ -1,50 +1,60 @@
 text,answer1,answer2,answer3,answer4,correct_answer
-What is the smallest planet in our solar system?,Mercury,Venus,Mars,Jupiter,Mercury
-What is the largest mammal on Earth?,Blue Whale,Elephant,Giraffe,Hippopotamus,Blue Whale
-What is the currency of India?,Rupee,Dollar,Euro,Pound,Rupee
-What is the name of the highest waterfall in the world?,Angel Falls,Niagara Falls,Iguazu Falls,Victoria Falls,Angel Falls
-What is the capital of Japan?,Tokyo,Osaka,Kyoto,Yokohama,Tokyo
-What is the largest country in the world by land area?,Russia,Canada,China,United States,Russia
-What is the largest ocean in the world?,Pacific,Atlantic,Indian,Arctic,Pacific
-What is the tallest mammal in the world?,Giraffe,Elephant,Hippopotamus,Rhino,Giraffe
-What is the highest mountain in Africa?,Kilimanjaro,Mount Kenya,Mount Meru,Mount Elgon,Kilimanjaro
-What is the capital of Spain?,Madrid,Barcelona,Seville,Valencia,Madrid
-What is the largest continent by land area?,Asia,Africa,North America,South America,Asia
-What is the smallest country in the world?,Vatican City,Monaco,Nauru,Tuvalu,Vatican City
-What is the capital of Turkey?,Ankara,Istanbul,Izmir,Bursa,Ankara
-What is the currency of Japan?,Yen,Euro,Dollar,Pound,Yen
-What is the highest mountain in Europe?,Mount Elbrus,Mont Blanc,Matterhorn,Mount Olympus,Mount Elbrus
-What is the capital of Brazil?,Brasília,São Paulo,Rio de Janeiro,Belo Horizonte,Brasília
-What is the largest country in South America?,Brazil,Argentina,Peru,Colombia,Brazil
-What is the currency of Russia?,Ruble,Euro,Dollar,Pound,Ruble
-What is the smallest state in the United States?,Rhode Island,Delaware,Connecticut,New Hampshire,Rhode Island
-What is the capital of Italy?,Rome,Milan,Venice,Florence,Rome
-What is the highest mountain in North America?,Denali,Mount Logan,Pico de Orizaba,Mount Saint Elias,Denali
-What is the currency of Mexico?,Peso,Dollar,Euro,Pound,Peso
-What is the largest desert in the world?,Sahara,Gobi,Arabian,Kalahari,Sahara
-What is the capital of France?,Paris,Marseille,Lyon,Toulouse,Paris
-What is the largest island in the world?,Greenland,New Guinea,Borneo,Madagascar,Greenland
-What is the largest river in the world by volume?,Amazon,Nile,Yangtze,Mississippi,Amazon
-What is the highest mountain in South America?,Aconcagua,Ojos del Salado,Mercedario,Llullaillaco,Aconcagua
-What is the currency of China?,Yuan,Euro,Dollar,Pound,Yuan
-What is the capital of Canada?,Ottawa,Toronto,Montreal,Vancouver,Ottawa
-What is the largest country in Africa by land area?,Algeria,Democratic Republic of the Congo,Sudan,Libya,Algeria
-What is the longest river in Europe?,Volga,Don,Danube,Ural,Volga
-What is the largest country in the world by population?,China,India,United States,Brazil,China
-What is the capital of South Korea?,Seoul,Busan,Incheon,Daegu,Seoul
-What is the currency of Australia?,Australian Dollar,US Dollar,Euro,Japanese Yen,Australian Dollar
-What is the name of the currency used in Switzerland?,Swiss Franc,Euro,British Pound,US Dollar,Swiss Franc
-What is the highest mountain in Asia?,Mount Everest,K2,Kangchenjunga,Lhotse,Mount Everest
-What is the capital of Egypt?,Cairo,Alexandria,Luxor,Aswan,Cairo
-What is the currency of South Korea?,South Korean won,US Dollar,Euro,Japanese Yen,South Korean won
-What is the name of the longest river in South America?,Amazon River,Parana River,Ucayali River,Sao Francisco River,Amazon River
-What is the capital of Thailand?,Bangkok,Chiang Mai,Phuket,Pattaya,Bangkok
-What is the name of the currency used in Brazil?,Brazilian Real,US Dollar,Euro,British Pound,Brazilian Real
-What is the smallest continent in the world?,Australia,Europe,Antarctica,South America,Antarctica
-What is the capital of Mexico?,Mexico City,Guadalajara,Monterrey,Tijuana,Mexico City
-What is the highest mountain in Australia?,Mount Kosciuszko,Mt. Wilhelm,Mount Giluwe,Puncak Jaya,Mount Kosciuszko
-What is the name of the currency used in Indonesia?,Indonesian Rupiah,US Dollar,Euro,British Pound,Indonesian Rupiah
-What is the highest waterfall in the United States?,Yosemite Falls,Ribbon Falls,Yellowstone Falls,Vernal Fall,Yosemite Falls
-What is the capital of Saudi Arabia?,Riyadh,Jeddah,Mecca,Dammam,Riyadh
-What is the currency of Canada?,Canadian Dollar,US Dollar,Euro,Japanese Yen,Canadian Dollar
-What is the name of the currency used in the United Arab Emirates?,UAE Dirham,US Dollar,Euro,British Pound,UAE Dirham
+What is the largest planet in our solar system?,Mars,Venus,Jupiter,Neptune,Jupiter
+Who painted the famous work "The Starry Night"?,Leonardo da Vinci,Vincent van Gogh,Pablo Picasso,Rembrandt van Rijn,Vincent van Gogh
+What is the smallest continent in the world?,North America,Australia,South America,Africa,Australia
+What is the capital of Spain?,Rome,Berlin,Paris,Madrid,Madrid
+What country is known as the Land of the Rising Sun?,Korea,China,Japan,Taiwan,Japan
+Which type of animal was the first to be sent into space?,Dog,Cat,Mouse,Rabbit,Dog
+Which is the largest ocean on Earth?,Atlantic Ocean,Indian Ocean,Arctic Ocean,Pacific Ocean,Pacific Ocean
+Who wrote the famous novel "1984"?,George Orwell,Ernest Hemingway,F. Scott Fitzgerald,Charles Dickens,George Orwell
+What is the highest mountain in the world?,Mount Kilimanjaro,Mount Everest,Mount Fuji,Mount McKinley,Mount Everest
+Who is the main character in the Harry Potter series?,Hermione Granger,Ron Weasley,Harry Potter,Severus Snape,Harry Potter
+What is the name of the famous London clock tower?,Big Ben,Leaning Tower of Pisa,Eiffel Tower,Sydney Opera House,Big Ben
+What is the smallest country in the world?,Monaco,Vatican City,Liechtenstein,Andorra,Vatican City
+Which planet is known as the Red Planet?,Saturn,Mars,Jupiter,Neptune,Mars
+What is the largest organ in the human body?,Liver,Heart,Skin,Lungs,Skin
+Who is the creator of the TV show "The Office"?,Steve Carell,Ricky Gervais,John Krasinski,Ed Helms,Ricky Gervais
+What is the smallest state in the United States?,Rhode Island,Connecticut,Delaware,Maine,Rhode Island
+Which country is home to the kangaroo?,Australia,New Zealand,South Africa,Madagascar,Australia
+What is the name of the world's largest desert?,Sahara Desert,Gobi Desert,Kalahari Desert,Mojave Desert,Sahara Desert
+What is the capital of Australia?,Sydney,Canberra,Melbourne,Brisbane,Canberra
+What is the name of the river that runs through Egypt?,Nile River,Amazon River,Mississippi River,Yangtze River,Nile River
+Which country is home to the Great Barrier Reef?,Australia,Indonesia,Philippines,Thailand,Australia
+What is the name of the fictional town where "The Simpsons" live?,South Park,Springfield,Quahog,Arlen,Springfield
+What is the largest mammal in the world?,Elephant,Whale,Rhino,Giraffe,Whale
+What is the largest organ in the human body?,Skin,Heart,Liver,Brain,Skin
+What is the chemical symbol for gold?,Au,Ag,Fe,Cu,Au
+What is the smallest bone in the human body?,Stapes,Patella,Radius,Fibula,Stapes
+What is the hardest substance in the human body?,Tooth enamel,Bone,Tooth dentin,Tooth pulp,Tooth enamel
+What is the smallest planet in our solar system?,Mercury,Venus,Mars,Neptune,Mercury
+What type of charge does a neutron have?,No charge,Positive charge,Negative charge,Variable charge,No charge
+What is the powerhouse of the cell?,Mitochondria,Nucleus,Golgi apparatus,Endoplasmic reticulum,Mitochondria
+What is the largest organ in a human body by volume?,Liver,Lungs,Brain,Kidneys,Liver
+What is the name of the longest bone in the human body?,Femur,Tibia,Radius,Fibula,Femur
+What is the name of the smallest bone in the human body?,Stapes,Patella,Humerus,Fibula,Stapes
+What is the scientific name for the study of rocks?,Geology,Meteorology,Hydrology,Seismology,Geology
+What is the smallest planet in the solar system by mass?,Mercury,Venus,Mars,Neptune,Mercury
+What type of charge does an electron have?,Negative charge,Positive charge,No charge,Variable charge,Negative charge
+What is the name of the planet in our solar system that is closest to the Sun?,Mercury,Venus,Earth,Mars,Mercury
+What is the name of the largest volcano in our solar system?,Olympus Mons,Mauna Loa,Vesuvius,Etna,Olympus Mons
+What type of animal is a seahorse?,Fish,Crustacean,Mollusk,Echinoderm,Fish
+What is the name of the instrument used to measure atmospheric pressure?,Barometer,Hygrometer,Thermometer,Anemometer,Barometer
+What is the largest gland in the human body?,Liver,Pancreas,Adrenal gland,Thyroid gland,Liver
+What is the smallest unit of matter?,Atom,Molecule,Electron,Neutron,Atom
+What is the name of the largest moon of Saturn?,Titan,Dione,Enceladus,Mimas,Titan
+What is the name of the instrument used to measure wind speed?,Anemometer,Thermometer,Hygrometer,Barometer,Anemometer
+What is the study of matter and energy in motion?,Mechanics,Thermodynamics,Optics,Electromagnetism,Mechanics
+What is the force that opposes motion between two surfaces that are in contact?,Friction,Gravity,Inertia,Momentum,Friction
+What is the unit of measurement for electric current?,Ampere,Ohm,Volt,Watt,Ampere
+What type of waves are used in radio broadcasting?,Electromagnetic waves,Sound waves,Water waves,Microwaves,Electromagnetic waves
+What type of energy is stored in an object due to its position or state?,Potential energy,Kinetic energy,Electrical energy,Thermal energy,Potential energy
+What is the name of the process that changes a liquid into a gas?,Evaporation,Sublimation,Melting,Freezing,Evaporation
+What type of energy is produced by the movement of electrically charged particles?,Electrical energy,Thermal energy,Radiant energy,Sound energy,Radiant energy
+What type of energy is produced by the movement of sound waves?,Sound energy,Electrical energy,Thermal energy,Radiant energy,Sound energy
+What is the branch of physics that deals with the behavior of light?,Optics,Mechanics,Thermodynamics,Electromagnetism,Optics
+What is the measure of the amount of matter in an object?,Mass,Weight,Volume,Density,Mass
+What is the unit of measurement for force?,Newton,Joule,Watt,Ampere,Newton
+What is the name of the process that changes a gas into a liquid?,Condensation,Vaporization,Melting,Freezing,Condensation
+What is the measure of the average kinetic energy of the particles in an object?,Temperature,Pressure,Volume,Density,Temperature
+What is the unit of measurement for power?,Watt,Joule,Newton,Ampere,Watt
+What is the unit of measurement for work?,Joule,Watt,Newton,Ampere,Joule

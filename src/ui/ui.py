@@ -15,10 +15,11 @@ class UserInterface:
         """Luokan konstruktori, jolla luodaan uusi käyttöliittymä
 
         """
-        self.questions = QuestionRepository().questions
+        self.questions = QuestionRepository(
+            "src/database/questions_db.txt").questions
         self.views = Views()
         self.logic = Logic(self.questions)
-        self.score_repository = ScoreRepository()
+        self.score_repository = ScoreRepository("src/database/high_scores.txt")
         self.answer_buttons = []
         self.game_over_buttons = []
         self.start_buttons = []

@@ -12,12 +12,12 @@ class Views:
 
         """
         pygame.init()
-        self.screen = pygame.display.set_mode((800, 600))
+        self.screen = pygame.display.set_mode((900, 600))
         pygame.display.set_caption("Peli")
         pygame.time.Clock().tick(30)
 
     def create_buttons(self, texts, y_pos, x_pos=100, b_width=400, b_heigth=40):
-        """Luo uusia painikkeita ja piirtää ne
+        """Luo uusia painikkeita Buttons -oliona ja piirtää ne. Lopuksi lisää ne listaan.
 
         Args:
             texts (list): Lista teksteistä, joista halutaan luoda painikkeet
@@ -48,7 +48,7 @@ class Views:
         """
         self.screen.fill((0, 0, 0))
         self.draw_text(f"Score: {score}", 10, 10)
-        self.draw_text(question, 100, 100)
+        self.draw_text(question, 50, 100, 28)
         self.create_buttons(answers, 200, 100, 500)
 
     def draw_text(self, text, i, j, size=30):
@@ -71,7 +71,7 @@ class Views:
         """Piirtää "Game Over" -näkymän.
 
         Args:
-            score (int): pelaajan pisteet pelin loppuessa
+            score (int/float): pelaajan pisteet pelin loppuessa
         """
         self.screen.fill((0, 0, 0))
         self.draw_text("Game Over", 300, 100, 60)
