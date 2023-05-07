@@ -7,6 +7,7 @@ Pelissä valitaan oikea vastaus erillaisiin kysymyksiin ja kerätään oikeista 
 - [Työaikakirjanpito](https://github.com/ttuukka/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 - [Changelog](https://github.com/ttuukka/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
 - [Arkkitehtuurikuvaus](https://github.com/ttuukka/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+- [Testausdokumentti](https://github.com/ttuukka/ot-harjoitustyo/blob/master/dokumentaatio/testaus.md)
 
 ## Releaset
 [Viikko 6](https://github.com/ttuukka/ot-harjoitustyo/releases/tag/viikko6)
