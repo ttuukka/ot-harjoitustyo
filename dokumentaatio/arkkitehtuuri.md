@@ -52,5 +52,5 @@ Näiden lisäksi rakenteesta löytyy [Question](https://github.com/ttuukka/ot-ha
 
 ## Sekvenssikaavio
 Kaavio kuvaa kun käyttäjä aloittaa pelin ja vastaa kysymykseen oikein
+![sekvenssikaavio (1)](https://user-images.githubusercontent.com/128143830/236687715-d4fc1366-aac1-480b-865e-13c664f86c04.png)
 
-![Untitled](https://user-images.githubusercontent.com/128143830/234311845-0356e312-8f6e-4963-8fb1-30f90e2b2e85.png)
