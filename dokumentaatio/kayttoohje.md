@@ -2,6 +2,9 @@
 
 Lataa pelin uusin [release](https://github.com/ttuukka/ot-harjoitustyo/releases) "Source code" kohdasta.
 
+## Poetryn asentaminen
+Asenna poetry [ohjeiden](https://python-poetry.org/docs/) mukaisesti. Pelin asentaminen vaatii poetryn version 1.4.1.
+
 ## Pelin käynnistäminen
 
 Aluksi asennenna vaaditut riippuvuudet komennolla:
